@@ -1,0 +1,83 @@
+body {
+    background-color: #f4f4f4;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    height: 600px;
+    text-align: center;
+}
+
+#containerJugador1{
+    background-color: #aaa;
+    border: 0.1em solid #000000;
+}
+
+#containerJugador2{
+    background-color: #bbb;
+    border: 0.1em solid #000000;
+}
+
+.turnoActual{
+    border: 0.3em solid #ff6600 !important;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.resultado{
+    background-color: yellow;
+    font-weight: bold;
+    border: 0.2em solid #f8072a;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.flecha-turno {
+    border: solid #002aff;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.pelear {
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+    height: fit-content;
+}
+
+.active {
+    border-color: #990337;
+}
+
+.puntaje {
+    font-size: large;
+    font-weight: bold;
+}

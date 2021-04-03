@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/Guerra.css" />
+        <link rel="stylesheet" href="styles/BarraVida.css" />
+    </head>
+    <body>
+        <div class="alert">
+            <label id="jugadaActual"></label>
+        </div>
+
+        <div class="row">
+
+            <div id="containerJugador1" class="column">
+
+                <div class="progress">
+                    <div class="progress-done" data-stamina-level="">
+                        <label class="staminaInfo"></label>
+                    </div>
+                </div>
+
+                <p><i class="flecha-turno hide"></i></p>
+
+                <img src="img/rocky.jpeg" width="200" height="300">
+
+                <br><br><br>
+
+                <label class="puntaje">0</label>
+
+                <br><br><br>
+
+                <input type="button" class="pelear active" value="Atacar" onclick="jugador1_atacar()">
+                <input type="button" class="pelear active" value="Curar" onclick="jugador1_curar()">
+                <input type="button" class="pelear active" value="Swap" onclick="jugador1_swap()">
+
+                <br>
+                <br>
+
+                <label class="resultado hide"></label>
+
+            </div>
+
+            <input id="btnPelear" class="pelear active" type="button" value="PELEAR!" onclick="jugar()">
+
+            <div id="containerJugador2" class="column">
+
+                <div class="progress">
+                    <div class="progress-done" data-stamina-level="">
+                        <label class="staminaInfo"></label>
+                    </div>
+                </div>
+
+                <p><i class="flecha-turno hide"></i></p>
+
+                <img src="img/drago.jpg" width="200" height="300">
+
+                <br><br><br>
+
+                <label class="puntaje">0</label>
+
+                <br><br><br>
+
+                <input type="button" class="pelear active" value="Atacar" onclick="jugador2_atacar()">
+                <input type="button" class="pelear active" value="Curar" onclick="jugador2_curar()">
+                <input type="button" class="pelear active" value="Swap" onclick="jugador2_swap()">
+
+                <br>
+                <br>
+
+                <label class="resultado hide"></label>
+            </div>
+
+        </div>
+    </body>
+
+    <script src="scripts/Utils.js"></script>
+    <script src="scripts/BarraVida.js"></script>
+    <script src="scripts/Guerrero.js"></script>
+    <script src="scripts/Guerra.js"></script>
+
+</html>
